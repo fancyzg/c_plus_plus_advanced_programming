@@ -1,6 +1,6 @@
 /*
  * File name    : smart_ponit_auto_ptr.cpp
- * Decription   : Simply use the function of auto_ptr, the code shows it need not to release memory allocted.
+ * Decription   : Simply use the function of auto_ptr, the code shows that it needs not to release memory already allocted.
  * Author       : Avanty
  * Date         : 2014/4/21
 */
