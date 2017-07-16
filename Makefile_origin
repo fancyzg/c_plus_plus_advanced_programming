@@ -1,0 +1,6 @@
+smart_test: smart_pointer_auto_ptr.o
+	g++ smart_pointer_auto_ptr.o -o smart_test
+smart_pointer_auto_ptr.o: smart_pointer_auto_ptr.cpp
+	g++ -c smart_pointer_auto_ptr.cpp -o smart_pointer_auto_ptr.o
+clean:
+	rm *.o smart_test

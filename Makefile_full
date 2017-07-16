@@ -1,0 +1,12 @@
+INC=include
+HEADER=-I $(INC)
+main : main.o smart_pointer_auto_ptr.o
+	g++ -o $@ $^
+
+main.o : main.cpp 
+	g++ $(HEADER) -o $@ -c $<
+
+smart_pointer_auto_ptr.o: smart_pointer_auto_ptr.cpp 
+	g++ $(HEADER) -o $@ -c $<
+clean:
+	rm *.o main

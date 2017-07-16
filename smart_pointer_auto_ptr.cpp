@@ -8,24 +8,25 @@
 #include<iostream>
 #include<string>
 #include<memory>
+#include"smart_pointer_auto_ptr.h"
 using namespace std;
 
-class Simple{
-    public:
-	Simple(int param = 0){
-	    number = param;
-	    cout<<"Simple:"<<number<<endl;
-	}
-	~Simple(){
-	    cout<<"~Simple:"<<number<<endl;
-	}
-	void PrintSomething(){
-	    cout<<"PrintSomething:"<<info_extend.c_str()<<endl;
-	}
-
-	string info_extend;
-	int number;
-};
+//class Simple{
+//    public:
+//	Simple(int param = 0){
+//	    number = param;
+//	    cout<<"Simple:"<<number<<endl;
+//	}
+//	~Simple(){
+//	    cout<<"~Simple:"<<number<<endl;
+//	}
+//	void PrintSomething(){
+//	    cout<<"PrintSomething:"<<info_extend.c_str()<<endl;
+//	}
+//
+//	string info_extend;
+//	int number;
+//};
 
 /* the basic usage auto_ptr*/
 void Test_AutoPrt(){
@@ -68,10 +69,10 @@ void Test_AutoPrt4(){
     }
 }
 
-int main()
-{
-    //Test_AutoPrt();
-    //Test_AutoPrt2();
-    Test_AutoPrt3();
-    return 0;
-}
+//int main()
+//{
+//    Test_AutoPrt();
+//    Test_AutoPrt2();
+//    Test_AutoPrt3();
+//    return 0;
+//}
